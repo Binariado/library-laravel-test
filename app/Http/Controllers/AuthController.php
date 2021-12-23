@@ -12,7 +12,17 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 
 class AuthController extends Controller
 {
-
+    /**
+     * Create a new AuthController instance.
+     *
+     * @return void
+     */
+    /*public function __construct()
+    {
+        $this->middleware(
+            'auth:api', ['except' => ['login']]
+        );
+    }*/
 
     public function register(Request $request): JsonResponse
     {
@@ -25,8 +35,8 @@ class AuthController extends Controller
             ],
             'document_number' => 'required|integer',
             'address' => 'required|string|max:80',
-            'phone' => 'required|integer',
-            'image' => 'required|image',
+            'phone' => 'required|string',
+            'image' => 'image',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
         ]);
