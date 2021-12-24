@@ -1,9 +1,11 @@
 <?php
 namespace App\Http\Controllers;
+use App\Http\Requests\StoreUserRequest;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use JWTAuth;
@@ -26,28 +28,18 @@ class AuthController extends Controller
     }*/
 
     /**
-     * @param Request $request
+     * @param StoreUserRequest $request
      * @return JsonResponse
      */
-    public function register(Request $request): JsonResponse
+    public function register(StoreUserRequest $request): JsonResponse
     {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'document_type' => [
-                'required',
-                Rule::in(['RC', 'CI', 'TI', 'CC', 'DNI', 'CE', 'TP']),
-            ],
-            'document_number' => 'required|integer',
-            'address' => 'required|string|max:80',
-            'phone' => 'required|string',
-            'image' => 'image',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
+        $path = null;
 
-        if($validator->fails()){
-            return response()->json($validator->errors(), 400);
+        if ($request->file('image')) {
+            if ($request->file('image')) {
+                $path = Storage::disk('public')
+                    ->putFile('users', $request->file('image'));
+            }
         }
 
         $user = User::create([
@@ -59,7 +51,7 @@ class AuthController extends Controller
             'document_number' => $request->get('document_number'),
             'address' => $request->get('address'),
             'phone' => $request->get('phone'),
-            'image' => '/dsd',
+            'image' => $path,
         ]);
 
         $access_token = JWTAuth::fromUser($user);

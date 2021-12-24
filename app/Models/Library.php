@@ -16,10 +16,11 @@ class Library extends Model
         'author_id',
         'editor_id',
         'publisher_id',
-        'gender_id',
+        'gender',
         'language_id',
         'date_of_publication',
         'number_page',
         'image'
     ];
+
 }

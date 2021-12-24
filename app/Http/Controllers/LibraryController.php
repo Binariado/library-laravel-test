@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreLibraryRequest;
 use App\Http\Requests\UpdateLibraryRequest;
 use App\Models\Library;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -17,9 +20,11 @@ class LibraryController extends Controller
      */
     public function index(): JsonResponse
     {
+        $libraries = Library::all();
+
         return response()->json([
             "message" => "List libraries",
-            "data" => Library::all()
+            "data" => $libraries
         ], Response::HTTP_CREATED);
     }
 
@@ -45,7 +50,8 @@ class LibraryController extends Controller
         $path = null;
 
         if ($request->file('image')) {
-            $path = $request->file('image')->store('public/libraries');
+            $path = Storage::disk('public')
+                ->putFile('libraries', $request->file('image'));
         }
 
         $gender = new Library([
@@ -54,7 +60,7 @@ class LibraryController extends Controller
             "author_id" => $request->get('author_id'),
             "editor_id" => $request->get('editor_id'),
             "publisher_id" => $request->get('publisher_id'),
-            "gender_id" => $request->get('gender_id'),
+            "gender" => $request->get('gender'),
             "language_id" => $request->get('language_id'),
             "date_of_publication" => $request->get('date_of_publication'),
             "number_page" => $request->get('number_page'),
@@ -101,16 +107,7 @@ class LibraryController extends Controller
      */
     public function update(UpdateLibraryRequest $request, Library $library): JsonResponse
     {
-        $path = null;
 
-        if ($request->file('image')) {
-
-            if ($library->get('image')) {
-                Storage::delete($library->get('image'));
-            }
-
-            $path = $request->file('image')->store('public/libraries');
-        }
 
         $library->update([
             "name" => $request->get('name'),
@@ -118,11 +115,10 @@ class LibraryController extends Controller
             "author_id" => $request->get('author_id'),
             "editor_id" => $request->get('editor_id'),
             "publisher_id" => $request->get('publisher_id'),
-            "gender_id" => $request->get('gender_id'),
+            "gender" => $request->get('gender'),
             "language_id" => $request->get('language_id'),
             "date_of_publication" => $request->get('date_of_publication'),
-            "number_page" => $request->get('number_page'),
-            "image" => $path
+            "number_page" => $request->get('number_page')
         ]);
 
         $library->save();
@@ -147,5 +143,44 @@ class LibraryController extends Controller
             "message" => "Library deleted",
             "data" => $library
         ], Response::HTTP_OK);
+    }
+
+    /**
+     * @param Request $request
+     * @param Library $library
+     * @return JsonResponse
+     */
+    public function image(Request $request, Library $library): JsonResponse{
+
+        $validator = Validator::make($request->all(), [
+            'image' => ['required', '']
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(
+                $validator->errors(),
+                Response::HTTP_BAD_REQUEST
+            );
+        }
+
+        if ( Storage::disk('public')->exists($library->image)) {
+            Storage::disk('public')
+                ->delete($library->image);
+        }
+
+        $path = Storage::disk('public')
+            ->putFile('libraries', $request->file('image'));
+
+
+        $library->update([
+            'image' => $path
+        ]);
+
+        $library->save();
+
+        return response()->json(array(
+            'message' => 'Update image user',
+            'data' => $path
+        ), Response::HTTP_OK);
     }
 }

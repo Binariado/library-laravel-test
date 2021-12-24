@@ -106,6 +106,7 @@ Route::group([
     $router->resource('/', 'App\Http\Controllers\LibraryController')
         ->only(['index', 'store', 'update']);
     $router->put('/{library}', 'App\Http\Controllers\LibraryController@update');
+    $router->post('/{library}/image', 'App\Http\Controllers\LibraryController@image');
     $router->delete('/{library}', 'App\Http\Controllers\LibraryController@destroy')
         ->middleware(['permission:Delete library']);
 });
@@ -121,6 +122,20 @@ Route::group([
         ->middleware(['permission:Delete borrowed book']);
 });
 
-Route::resource('/users', 'App\Http\Controllers\UserController')
-    ->middleware(['api', 'jwt.verify', 'role:admin|root'])
-    ->only(['index', 'show']);
+Route::group([
+    'middleware' => ['api', 'jwt.verify'],
+    'prefix' => 'users',
+], function ($router) {
+    $router->resource('/', 'App\Http\Controllers\UserController')
+        ->middleware(['api', 'role:admin|root'])
+        ->only(['index', 'show']);
+    $router->get('/{user}', 'App\Http\Controllers\UserController@show')
+        ->middleware(['role:admin|root|readr']);
+    $router->put('/{user}', 'App\Http\Controllers\UserController@update');
+    $router->post('/{user}/image', 'App\Http\Controllers\UserController@image');
+    $router->delete('/{user}', 'App\Http\Controllers\UserController@destroy')
+        ->middleware(['permission:Delete user']);
+    $router->get('/{user}/ban', 'App\Http\Controllers\UserController@banUser')
+        ->middleware(['permission:Ban user']);
+});
+

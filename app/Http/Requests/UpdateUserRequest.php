@@ -4,10 +4,11 @@ namespace App\Http\Requests;
 
 use App\helper\RequestFailedMessage;
 use Illuminate\Foundation\Http\FormRequest;
-use JWTAuth;
+use Illuminate\Validation\Rule;
 use Symfony\Component\HttpFoundation\Response;
+use JWTAuth;
 
-class UpdateLibraryRequest extends FormRequest
+class UpdateUserRequest extends FormRequest
 {
     use RequestFailedMessage;
 
@@ -16,13 +17,13 @@ class UpdateLibraryRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize(): bool
+    public function authorize()
     {
         if (!$user = JWTAuth::parseToken()->authenticate()) {
             return false;
         }
 
-        return $user->can('Create library');
+        return $user->can('Update user');
     }
 
     /**
@@ -46,19 +47,17 @@ class UpdateLibraryRequest extends FormRequest
      *
      * @return array
      */
-    public function rules(): array
+    public function rules()
     {
         return [
-            'name' => 'required|string|max:255',
-            'book_archive' => 'required|string|max:255',
-            'author_id' => 'required|integer|exists:App\Models\Author,id',
-            'editor_id' => 'required|integer|exists:App\Models\Editor,id',
-            'publisher_id' => 'required|integer|exists:App\Models\Publisher,id',
-            'gender' => 'required|string',
-            'language_id' => 'required|integer|exists:App\Models\Language,id',
-            'date_of_publication' => 'required|string|max:255',
-            'number_page' => 'required|integer',
-            'image' => 'image'
+            'name' => 'string|max:255',
+            'last_name' => 'string|max:255',
+            'document_type' => Rule::in(['RC', 'CI', 'TI', 'CC', 'DNI', 'CE', 'TP']),
+            'document_number' => 'integer',
+            'address' => 'string|max:80',
+            'phone' => 'string',
+            'email' => 'string|email|max:255',
+            'password' => 'string|min:8|confirmed',
         ];
     }
 }

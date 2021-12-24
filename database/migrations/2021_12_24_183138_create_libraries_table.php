@@ -26,9 +26,7 @@ class CreateLibrariesTable extends Migration
             $table->foreignId('publisher_id')->constrained()
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();
-            $table->foreignId('gender_id')->constrained()
-                ->cascadeOnUpdate()
-                ->cascadeOnDelete();
+            $table->text('gender');
             $table->foreignId('language_id')->constrained()
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();

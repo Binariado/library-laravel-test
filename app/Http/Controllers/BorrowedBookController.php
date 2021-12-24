@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreBorrowedBookRequest;
 use App\Http\Requests\UpdateBorrowedBookRequest;
 use App\Models\BorrowedBook;
-use Dflydev\DotAccessData\Data;
+use App\Models\User;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Validation\Rule;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -20,9 +19,15 @@ class BorrowedBookController extends Controller
      */
     public function index(): JsonResponse
     {
+        $BorrowedBooks = BorrowedBook::all();
+
+        foreach ($BorrowedBooks as $item) {
+            $item->borrowedBookUsers;
+        }
+
         return response()->json([
             "message" => "List borrowed book",
-            "data" => BorrowedBook::all()
+            "data" => $BorrowedBooks
         ], Response::HTTP_CREATED);
     }
 
@@ -44,6 +49,15 @@ class BorrowedBookController extends Controller
      */
     public function store(StoreBorrowedBookRequest $request): JsonResponse
     {
+        $user = User::query()->find($request->get('user_id'));
+
+        if ($user) {
+            return response()->json([
+                "message" => "User banned",
+                "data" => $user
+            ], Response::HTTP_FORBIDDEN);
+        }
+
         $delivery_date_delta =  date('Y-m-d H:i:s');
 
         $validator = Validator::make([

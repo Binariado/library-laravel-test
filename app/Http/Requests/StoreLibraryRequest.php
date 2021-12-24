@@ -54,7 +54,7 @@ class StoreLibraryRequest extends FormRequest
             'author_id' => 'required|integer|exists:App\Models\Author,id',
             'editor_id' => 'required|integer|exists:App\Models\Editor,id',
             'publisher_id' => 'required|integer|exists:App\Models\Publisher,id',
-            'gender_id' => 'required|integer|exists:App\Models\Gender,id',
+            'gender' => 'required|string',
             'language_id' => 'required|integer|exists:App\Models\Language,id',
             'date_of_publication' => 'required|date',
             'number_page' => 'required|integer',
