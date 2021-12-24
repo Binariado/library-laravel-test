@@ -60,6 +60,18 @@ class PermissionSeeder extends Seeder
             "View gender"
         ];
 
+        $library = [
+            "Create library",
+            "Update library",
+            "View library"
+        ];
+
+        $borrow_book = [
+            "Create borrowed book",
+            "Update borrowed book",
+            "View borrowed book"
+        ];
+
         $root_permission = [
             "Assign role",
             "Delete role",
@@ -67,10 +79,19 @@ class PermissionSeeder extends Seeder
             "Delete editor",
             "Delete publisher",
             "Delete author",
-            "Delete gender"
+            "Delete gender",
+            "Delete library"
         ];
 
-        $permissions = [$author, $publisher, $editor, $gender, $root_permission];
+        $permissions = [
+            $author,
+            $publisher,
+            $editor,
+            $gender,
+            $library,
+            $borrow_book,
+            $root_permission
+        ];
 
         foreach ($permissions as $permission) {
             if (is_array($permission)) {
@@ -84,7 +105,14 @@ class PermissionSeeder extends Seeder
 
         $roles = [
             'root' => [$root_permission],
-            'admin' => [$author, $publisher, $editor, $gender],
+            'admin' => [
+                $author,
+                $publisher,
+                $editor,
+                $gender,
+                $library,
+                $borrow_book
+            ],
             'reader' => []
         ];
 

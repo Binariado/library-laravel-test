@@ -4,10 +4,10 @@ namespace App\Http\Requests;
 
 use App\helper\RequestFailedMessage;
 use Illuminate\Foundation\Http\FormRequest;
-use JWTAuth;
 use Symfony\Component\HttpFoundation\Response;
+use JWTAuth;
 
-class UpdateGenderRequest extends FormRequest
+class StoreBorrowedBookRequest extends FormRequest
 {
     use RequestFailedMessage;
 
@@ -16,13 +16,13 @@ class UpdateGenderRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize(): bool
+    public function authorize()
     {
         if (!$user = JWTAuth::parseToken()->authenticate()) {
             return false;
         }
 
-        return $user->can('Update gender');
+        return $user->can('Create borrowed book');
     }
 
     /**
@@ -49,7 +49,9 @@ class UpdateGenderRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:genders|string|max:255'
+            'library_id' => 'required|integer|exists:App\Models\Library,id',
+            'user_id' => 'required|integer|exists:App\Models\User,id',
+            'return_date' => 'required|date',
         ];
     }
 }

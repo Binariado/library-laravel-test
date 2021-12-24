@@ -1,26 +1,28 @@
-[
-    {
-        "country": "Aruba",
-        "languages": [
+<?php
+
+return [
+    [
+        "country" => "Aruba",
+        "languages" => [
             "Dutch",
             "English",
             "Papiamento",
             "Spanish"
         ]
-    },
-    {
-        "country": "Afghanistan",
-        "languages": [
+    ],
+    [
+        "country" => "Afghanistan",
+        "languages" => [
             "Balochi",
             "Dari",
             "Pashto",
             "Turkmenian",
             "Uzbek"
         ]
-    },
-    {
-        "country": "Angola",
-        "languages": [
+    ],
+    [
+        "country" => "Angola",
+        "languages" => [
             "Ambo",
             "Chokwe",
             "Kongo",
@@ -31,78 +33,78 @@
             "Nyaneka-nkhumbi",
             "Ovimbundu"
         ]
-    },
-    {
-        "country": "Anguilla",
-        "languages": [
+    ],
+    [
+        "country" => "Anguilla",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Albania",
-        "languages": [
+    ],
+    [
+        "country" => "Albania",
+        "languages" => [
             "Albaniana",
             "Greek",
             "Macedonian"
         ]
-    },
-    {
-        "country": "Andorra",
-        "languages": [
+    ],
+    [
+        "country" => "Andorra",
+        "languages" => [
             "Catalan",
             "French",
             "Portuguese",
             "Spanish"
         ]
-    },
-    {
-        "country": "Netherlands Antilles",
-        "languages": [
+    ],
+    [
+        "country" => "Netherlands Antilles",
+        "languages" => [
             "Dutch",
             "English",
             "Papiamento"
         ]
-    },
-    {
-        "country": "United Arab Emirates",
-        "languages": [
+    ],
+    [
+        "country" => "United Arab Emirates",
+        "languages" => [
             "Arabic",
             "Hindi"
         ]
-    },
-    {
-        "country": "Argentina",
-        "languages": [
+    ],
+    [
+        "country" => "Argentina",
+        "languages" => [
             "Indian Languages",
             "Italian",
             "Spanish"
         ]
-    },
-    {
-        "country": "Armenia",
-        "languages": [
+    ],
+    [
+        "country" => "Armenia",
+        "languages" => [
             "Armenian",
             "Azerbaijani"
         ]
-    },
-    {
-        "country": "American Samoa",
-        "languages": [
+    ],
+    [
+        "country" => "American Samoa",
+        "languages" => [
             "English",
             "Samoan",
             "Tongan"
         ]
-    },
-    {
-        "country": "Antigua and Barbuda",
-        "languages": [
+    ],
+    [
+        "country" => "Antigua and Barbuda",
+        "languages" => [
             "Creole English",
             "English"
         ]
-    },
-    {
-        "country": "Australia",
-        "languages": [
+    ],
+    [
+        "country" => "Australia",
+        "languages" => [
             "Arabic",
             "Canton Chinese",
             "English",
@@ -112,10 +114,10 @@
             "Serbo-Croatian",
             "Vietnamese"
         ]
-    },
-    {
-        "country": "Austria",
-        "languages": [
+    ],
+    [
+        "country" => "Austria",
+        "languages" => [
             "Czech",
             "German",
             "Hungarian",
@@ -125,27 +127,27 @@
             "Slovene",
             "Turkish"
         ]
-    },
-    {
-        "country": "Azerbaijan",
-        "languages": [
+    ],
+    [
+        "country" => "Azerbaijan",
+        "languages" => [
             "Armenian",
             "Azerbaijani",
             "Lezgian",
             "Russian"
         ]
-    },
-    {
-        "country": "Burundi",
-        "languages": [
+    ],
+    [
+        "country" => "Burundi",
+        "languages" => [
             "French",
             "Kirundi",
             "Swahili"
         ]
-    },
-    {
-        "country": "Belgium",
-        "languages": [
+    ],
+    [
+        "country" => "Belgium",
+        "languages" => [
             "Arabic",
             "Dutch",
             "French",
@@ -153,10 +155,10 @@
             "Italian",
             "Turkish"
         ]
-    },
-    {
-        "country": "Benin",
-        "languages": [
+    ],
+    [
+        "country" => "Benin",
+        "languages" => [
             "Adja",
             "Aizo",
             "Bariba",
@@ -165,10 +167,10 @@
             "Joruba",
             "Somba"
         ]
-    },
-    {
-        "country": "Burkina Faso",
-        "languages": [
+    ],
+    [
+        "country" => "Burkina Faso",
+        "languages" => [
             "Busansi",
             "Dagara",
             "Dyula",
@@ -176,10 +178,10 @@
             "Gurma",
             "Mossi"
         ]
-    },
-    {
-        "country": "Bangladesh",
-        "languages": [
+    ],
+    [
+        "country" => "Bangladesh",
+        "languages" => [
             "Bengali",
             "Chakma",
             "Garo",
@@ -188,116 +190,116 @@
             "Santhali",
             "Tripuri"
         ]
-    },
-    {
-        "country": "Bulgaria",
-        "languages": [
+    ],
+    [
+        "country" => "Bulgaria",
+        "languages" => [
             "Bulgariana",
             "Macedonian",
             "Romani",
             "Turkish"
         ]
-    },
-    {
-        "country": "Bahrain",
-        "languages": [
+    ],
+    [
+        "country" => "Bahrain",
+        "languages" => [
             "Arabic",
             "English"
         ]
-    },
-    {
-        "country": "Bahamas",
-        "languages": [
+    ],
+    [
+        "country" => "Bahamas",
+        "languages" => [
             "Creole English",
             "Creole French"
         ]
-    },
-    {
-        "country": "Bosnia and Herzegovina",
-        "languages": [
+    ],
+    [
+        "country" => "Bosnia and Herzegovina",
+        "languages" => [
             "Bosnian"
         ]
-    },
-    {
-        "country": "Belarus",
-        "languages": [
+    ],
+    [
+        "country" => "Belarus",
+        "languages" => [
             "Belorussian",
             "Polish",
             "Russian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Belize",
-        "languages": [
+    ],
+    [
+        "country" => "Belize",
+        "languages" => [
             "English",
             "Garifuna",
             "Maya Languages",
             "Spanish"
         ]
-    },
-    {
-        "country": "Bermuda",
-        "languages": [
+    ],
+    [
+        "country" => "Bermuda",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Bolivia",
-        "languages": [
+    ],
+    [
+        "country" => "Bolivia",
+        "languages" => [
             "Aimar√°",
             "Guaran√≠",
             "Ket¬öua",
             "Spanish"
         ]
-    },
-    {
-        "country": "Brazil",
-        "languages": [
+    ],
+    [
+        "country" => "Brazil",
+        "languages" => [
             "German",
             "Indian Languages",
             "Italian",
             "Japanese",
             "Portuguese"
         ]
-    },
-    {
-        "country": "Barbados",
-        "languages": [
+    ],
+    [
+        "country" => "Barbados",
+        "languages" => [
             "Bajan",
             "English"
         ]
-    },
-    {
-        "country": "Brunei",
-        "languages": [
+    ],
+    [
+        "country" => "Brunei",
+        "languages" => [
             "Chinese",
             "English",
             "Malay",
             "Malay-English"
         ]
-    },
-    {
-        "country": "Bhutan",
-        "languages": [
+    ],
+    [
+        "country" => "Bhutan",
+        "languages" => [
             "Asami",
             "Dzongkha",
             "Nepali"
         ]
-    },
-    {
-        "country": "Botswana",
-        "languages": [
+    ],
+    [
+        "country" => "Botswana",
+        "languages" => [
             "Khoekhoe",
             "Ndebele",
             "San",
             "Shona",
             "Tswana"
         ]
-    },
-    {
-        "country": "Central African Republic",
-        "languages": [
+    ],
+    [
+        "country" => "Central African Republic",
+        "languages" => [
             "Banda",
             "Gbaya",
             "Mandjia",
@@ -305,10 +307,10 @@
             "Ngbaka",
             "Sara"
         ]
-    },
-    {
-        "country": "Canada",
-        "languages": [
+    ],
+    [
+        "country" => "Canada",
+        "languages" => [
             "Chinese",
             "Dutch",
             "English",
@@ -322,35 +324,35 @@
             "Spanish",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Cocos (Keeling) Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Cocos (Keeling) Islands",
+        "languages" => [
             "English",
             "Malay"
         ]
-    },
-    {
-        "country": "Switzerland",
-        "languages": [
+    ],
+    [
+        "country" => "Switzerland",
+        "languages" => [
             "French",
             "German",
             "Italian",
             "Romansh"
         ]
-    },
-    {
-        "country": "Chile",
-        "languages": [
+    ],
+    [
+        "country" => "Chile",
+        "languages" => [
             "Aimar√°",
             "Araucan",
             "Rapa nui",
             "Spanish"
         ]
-    },
-    {
-        "country": "China",
-        "languages": [
+    ],
+    [
+        "country" => "China",
+        "languages" => [
             "Chinese",
             "Dong",
             "Hui",
@@ -364,20 +366,20 @@
             "Yi",
             "Zhuang"
         ]
-    },
-    {
-        "country": "Ivory Coast",
-        "languages": [
+    ],
+    [
+        "country" => "Ivory Coast",
+        "languages" => [
             "Akan",
             "Gur",
             "Kru",
             "Malinke",
             "[South]Mande"
         ]
-    },
-    {
-        "country": "Cameroon",
-        "languages": [
+    ],
+    [
+        "country" => "Cameroon",
+        "languages" => [
             "Bamileke-bamum",
             "Duala",
             "Fang",
@@ -387,19 +389,19 @@
             "Masana",
             "Tikar"
         ]
-    },
-    {
-        "country": "Congo, The Democratic Republic of the",
-        "languages": [
+    ],
+    [
+        "country" => "Congo, The Democratic Republic of the",
+        "languages" => [
             "Lingala",
             "Kikongo",
             "Swahili",
             "Tshiluba"
         ]
-    },
-    {
-        "country": "Congo",
-        "languages": [
+    ],
+    [
+        "country" => "Congo",
+        "languages" => [
             "Kongo",
             "Mbete",
             "Mboshi",
@@ -407,79 +409,79 @@
             "Sango",
             "Teke"
         ]
-    },
-    {
-        "country": "Cook Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Cook Islands",
+        "languages" => [
             "English",
             "Maori"
         ]
-    },
-    {
-        "country": "Colombia",
-        "languages": [
+    ],
+    [
+        "country" => "Colombia",
+        "languages" => [
             "Arawakan",
             "Caribbean",
             "Chibcha",
             "Creole English",
             "Spanish"
         ]
-    },
-    {
-        "country": "Comoros",
-        "languages": [
+    ],
+    [
+        "country" => "Comoros",
+        "languages" => [
             "Comorian",
             "Comorian-Arabic",
             "Comorian-French",
             "Comorian-madagassi",
             "Comorian-Swahili"
         ]
-    },
-    {
-        "country": "Cape Verde",
-        "languages": [
+    ],
+    [
+        "country" => "Cape Verde",
+        "languages" => [
             "Crioulo",
             "Portuguese"
         ]
-    },
-    {
-        "country": "Costa Rica",
-        "languages": [
+    ],
+    [
+        "country" => "Costa Rica",
+        "languages" => [
             "Chibcha",
             "Chinese",
             "Creole English",
             "Spanish"
         ]
-    },
-    {
-        "country": "Cuba",
-        "languages": [
+    ],
+    [
+        "country" => "Cuba",
+        "languages" => [
             "Spanish"
         ]
-    },
-    {
-        "country": "Christmas Island",
-        "languages": [
+    ],
+    [
+        "country" => "Christmas Island",
+        "languages" => [
             "Chinese",
             "English"
         ]
-    },
-    {
-        "country": "Cayman Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Cayman Islands",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Cyprus",
-        "languages": [
+    ],
+    [
+        "country" => "Cyprus",
+        "languages" => [
             "Greek",
             "Turkish"
         ]
-    },
-    {
-        "country": "Czech Republic",
-        "languages": [
+    ],
+    [
+        "country" => "Czech Republic",
+        "languages" => [
             "Czech",
             "German",
             "Hungarian",
@@ -489,10 +491,10 @@
             "Silesiana",
             "Slovak"
         ]
-    },
-    {
-        "country": "Germany",
-        "languages": [
+    ],
+    [
+        "country" => "Germany",
+        "languages" => [
             "German",
             "Greek",
             "Italian",
@@ -500,25 +502,25 @@
             "Southern Slavic Languages",
             "Turkish"
         ]
-    },
-    {
-        "country": "Djibouti",
-        "languages": [
+    ],
+    [
+        "country" => "Djibouti",
+        "languages" => [
             "Afar",
             "Arabic",
             "Somali"
         ]
-    },
-    {
-        "country": "Dominica",
-        "languages": [
+    ],
+    [
+        "country" => "Dominica",
+        "languages" => [
             "Creole English",
             "Creole French"
         ]
-    },
-    {
-        "country": "Denmark",
-        "languages": [
+    ],
+    [
+        "country" => "Denmark",
+        "languages" => [
             "Arabic",
             "Danish",
             "English",
@@ -527,38 +529,38 @@
             "Swedish",
             "Turkish"
         ]
-    },
-    {
-        "country": "Dominican Republic",
-        "languages": [
+    ],
+    [
+        "country" => "Dominican Republic",
+        "languages" => [
             "Creole French",
             "Spanish"
         ]
-    },
-    {
-        "country": "Algeria",
-        "languages": [
+    ],
+    [
+        "country" => "Algeria",
+        "languages" => [
             "Arabic",
             "Berberi"
         ]
-    },
-    {
-        "country": "Ecuador",
-        "languages": [
+    ],
+    [
+        "country" => "Ecuador",
+        "languages" => [
             "Ket¬öua",
             "Spanish"
         ]
-    },
-    {
-        "country": "Egypt",
-        "languages": [
+    ],
+    [
+        "country" => "Egypt",
+        "languages" => [
             "Arabic",
             "Sinaberberi"
         ]
-    },
-    {
-        "country": "Eritrea",
-        "languages": [
+    ],
+    [
+        "country" => "Eritrea",
+        "languages" => [
             "Afar",
             "Bilin",
             "Hadareb",
@@ -566,35 +568,35 @@
             "Tigre",
             "Tigrigna"
         ]
-    },
-    {
-        "country": "Western Sahara",
-        "languages": [
+    ],
+    [
+        "country" => "Western Sahara",
+        "languages" => [
             "Arabic"
         ]
-    },
-    {
-        "country": "Spain",
-        "languages": [
+    ],
+    [
+        "country" => "Spain",
+        "languages" => [
             "Basque",
             "Catalan",
             "Galecian",
             "Spanish"
         ]
-    },
-    {
-        "country": "Estonia",
-        "languages": [
+    ],
+    [
+        "country" => "Estonia",
+        "languages" => [
             "Belorussian",
             "Estonian",
             "Finnish",
             "Russian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Ethiopia",
-        "languages": [
+    ],
+    [
+        "country" => "Ethiopia",
+        "languages" => [
             "Amharic",
             "Gurage",
             "Oromo",
@@ -603,33 +605,33 @@
             "Tigrigna",
             "Walaita"
         ]
-    },
-    {
-        "country": "Finland",
-        "languages": [
+    ],
+    [
+        "country" => "Finland",
+        "languages" => [
             "Estonian",
             "Finnish",
             "Russian",
             "Saame",
             "Swedish"
         ]
-    },
-    {
-        "country": "Fiji Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Fiji Islands",
+        "languages" => [
             "Fijian",
             "Hindi"
         ]
-    },
-    {
-        "country": "Falkland Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Falkland Islands",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "France",
-        "languages": [
+    ],
+    [
+        "country" => "France",
+        "languages" => [
             "Arabic",
             "French",
             "Italian",
@@ -637,17 +639,17 @@
             "Spanish",
             "Turkish"
         ]
-    },
-    {
-        "country": "Faroe Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Faroe Islands",
+        "languages" => [
             "Danish",
             "Faroese"
         ]
-    },
-    {
-        "country": "Micronesia, Federated States of",
-        "languages": [
+    ],
+    [
+        "country" => "Micronesia, Federated States of",
+        "languages" => [
             "Kosrean",
             "Mortlock",
             "Pohnpei",
@@ -655,27 +657,27 @@
             "Wolea",
             "Yap"
         ]
-    },
-    {
-        "country": "Gabon",
-        "languages": [
+    ],
+    [
+        "country" => "Gabon",
+        "languages" => [
             "Fang",
             "Mbete",
             "Mpongwe",
             "Punu-sira-nzebi"
         ]
-    },
-    {
-        "country": "United Kingdom",
-        "languages": [
+    ],
+    [
+        "country" => "United Kingdom",
+        "languages" => [
             "English",
             "Gaeli",
             "Kymri"
         ]
-    },
-    {
-        "country": "Georgia",
-        "languages": [
+    ],
+    [
+        "country" => "Georgia",
+        "languages" => [
             "Abhyasi",
             "Armenian",
             "Azerbaijani",
@@ -683,10 +685,10 @@
             "Osseetti",
             "Russian"
         ]
-    },
-    {
-        "country": "Ghana",
-        "languages": [
+    ],
+    [
+        "country" => "Ghana",
+        "languages" => [
             "Akan",
             "Ewe",
             "Ga-adangme",
@@ -694,17 +696,17 @@
             "Joruba",
             "Mossi"
         ]
-    },
-    {
-        "country": "Gibraltar",
-        "languages": [
+    ],
+    [
+        "country" => "Gibraltar",
+        "languages" => [
             "Arabic",
             "English"
         ]
-    },
-    {
-        "country": "Guinea",
-        "languages": [
+    ],
+    [
+        "country" => "Guinea",
+        "languages" => [
             "Ful",
             "Kissi",
             "Kpelle",
@@ -713,27 +715,27 @@
             "Susu",
             "Yalunka"
         ]
-    },
-    {
-        "country": "Guadeloupe",
-        "languages": [
+    ],
+    [
+        "country" => "Guadeloupe",
+        "languages" => [
             "Creole French",
             "French"
         ]
-    },
-    {
-        "country": "Gambia",
-        "languages": [
+    ],
+    [
+        "country" => "Gambia",
+        "languages" => [
             "Diola",
             "Ful",
             "Malinke",
             "Soninke",
             "Wolof"
         ]
-    },
-    {
-        "country": "Guinea-Bissau",
-        "languages": [
+    ],
+    [
+        "country" => "Guinea-Bissau",
+        "languages" => [
             "Balante",
             "Crioulo",
             "Ful",
@@ -741,105 +743,105 @@
             "Mandyako",
             "Portuguese"
         ]
-    },
-    {
-        "country": "Equatorial Guinea",
-        "languages": [
+    ],
+    [
+        "country" => "Equatorial Guinea",
+        "languages" => [
             "Bubi",
             "Fang"
         ]
-    },
-    {
-        "country": "Greece",
-        "languages": [
+    ],
+    [
+        "country" => "Greece",
+        "languages" => [
             "Greek",
             "Turkish"
         ]
-    },
-    {
-        "country": "Grenada",
-        "languages": [
+    ],
+    [
+        "country" => "Grenada",
+        "languages" => [
             "Creole English"
         ]
-    },
-    {
-        "country": "Greenland",
-        "languages": [
+    ],
+    [
+        "country" => "Greenland",
+        "languages" => [
             "Danish",
             "Greenlandic"
         ]
-    },
-    {
-        "country": "Guatemala",
-        "languages": [
+    ],
+    [
+        "country" => "Guatemala",
+        "languages" => [
             "Cakchiquel",
             "Kekch√≠",
             "Mam",
             "Quich√©",
             "Spanish"
         ]
-    },
-    {
-        "country": "French Guiana",
-        "languages": [
+    ],
+    [
+        "country" => "French Guiana",
+        "languages" => [
             "Creole French",
             "Indian Languages"
         ]
-    },
-    {
-        "country": "Guam",
-        "languages": [
+    ],
+    [
+        "country" => "Guam",
+        "languages" => [
             "Chamorro",
             "English",
             "Japanese",
             "Korean",
             "Philippene Languages"
         ]
-    },
-    {
-        "country": "Guyana",
-        "languages": [
+    ],
+    [
+        "country" => "Guyana",
+        "languages" => [
             "Arawakan",
             "Caribbean",
             "Creole English"
         ]
-    },
-    {
-        "country": "Hong Kong",
-        "languages": [
+    ],
+    [
+        "country" => "Hong Kong",
+        "languages" => [
             "Canton Chinese",
             "Chiu chau",
             "English",
             "Fukien",
             "Hakka"
         ]
-    },
-    {
-        "country": "Honduras",
-        "languages": [
+    ],
+    [
+        "country" => "Honduras",
+        "languages" => [
             "Creole English",
             "Garifuna",
             "Miskito",
             "Spanish"
         ]
-    },
-    {
-        "country": "Croatia",
-        "languages": [
+    ],
+    [
+        "country" => "Croatia",
+        "languages" => [
             "Serbo-Croatian",
             "Slovene"
         ]
-    },
-    {
-        "country": "Haiti",
-        "languages": [
+    ],
+    [
+        "country" => "Haiti",
+        "languages" => [
             "French",
             "Haiti Creole"
         ]
-    },
-    {
-        "country": "Hungary",
-        "languages": [
+    ],
+    [
+        "country" => "Hungary",
+        "languages" => [
             "German",
             "Hungarian",
             "Romani",
@@ -847,10 +849,10 @@
             "Serbo-Croatian",
             "Slovak"
         ]
-    },
-    {
-        "country": "Indonesia",
-        "languages": [
+    ],
+    [
+        "country" => "Indonesia",
+        "languages" => [
             "Bahasa",
             "Bali",
             "Banja",
@@ -862,10 +864,10 @@
             "Minangkabau",
             "Sunda"
         ]
-    },
-    {
-        "country": "India",
-        "languages": [
+    ],
+    [
+        "country" => "India",
+        "languages" => [
             "Asami",
             "Bengali",
             "Gujarati",
@@ -888,17 +890,17 @@
             "Santali",
             "Sindhi"
         ]
-    },
-    {
-        "country": "Ireland",
-        "languages": [
+    ],
+    [
+        "country" => "Ireland",
+        "languages" => [
             "English",
             "Irish"
         ]
-    },
-    {
-        "country": "Iran",
-        "languages": [
+    ],
+    [
+        "country" => "Iran",
+        "languages" => [
             "Arabic",
             "Azerbaijani",
             "Bakhtyari",
@@ -910,35 +912,35 @@
             "Persian",
             "Turkmenian"
         ]
-    },
-    {
-        "country": "Iraq",
-        "languages": [
+    ],
+    [
+        "country" => "Iraq",
+        "languages" => [
             "Arabic",
             "Assyrian",
             "Azerbaijani",
             "Kurdish",
             "Persian"
         ]
-    },
-    {
-        "country": "Iceland",
-        "languages": [
+    ],
+    [
+        "country" => "Iceland",
+        "languages" => [
             "English",
             "Icelandic"
         ]
-    },
-    {
-        "country": "Israel",
-        "languages": [
+    ],
+    [
+        "country" => "Israel",
+        "languages" => [
             "Arabic",
             "Hebrew",
             "Russian"
         ]
-    },
-    {
-        "country": "Italy",
-        "languages": [
+    ],
+    [
+        "country" => "Italy",
+        "languages" => [
             "Albaniana",
             "French",
             "Friuli",
@@ -948,25 +950,25 @@
             "Sardinian",
             "Slovene"
         ]
-    },
-    {
-        "country": "Jamaica",
-        "languages": [
+    ],
+    [
+        "country" => "Jamaica",
+        "languages" => [
             "Creole English",
             "Hindi"
         ]
-    },
-    {
-        "country": "Jordan",
-        "languages": [
+    ],
+    [
+        "country" => "Jordan",
+        "languages" => [
             "Arabic",
             "Armenian",
             "Circassian"
         ]
-    },
-    {
-        "country": "Japan",
-        "languages": [
+    ],
+    [
+        "country" => "Japan",
+        "languages" => [
             "Ainu",
             "Chinese",
             "English",
@@ -974,10 +976,10 @@
             "Korean",
             "Philippene Languages"
         ]
-    },
-    {
-        "country": "Kazakhstan",
-        "languages": [
+    ],
+    [
+        "country" => "Kazakhstan",
+        "languages" => [
             "German",
             "Kazakh",
             "Russian",
@@ -985,10 +987,10 @@
             "Ukrainian",
             "Uzbek"
         ]
-    },
-    {
-        "country": "Kenya",
-        "languages": [
+    ],
+    [
+        "country" => "Kenya",
+        "languages" => [
             "Gusii",
             "Kalenjin",
             "Kamba",
@@ -1000,10 +1002,10 @@
             "Nyika",
             "Turkana"
         ]
-    },
-    {
-        "country": "Kyrgyzstan",
-        "languages": [
+    ],
+    [
+        "country" => "Kyrgyzstan",
+        "languages" => [
             "Kazakh",
             "Kirgiz",
             "Russian",
@@ -1012,64 +1014,64 @@
             "Ukrainian",
             "Uzbek"
         ]
-    },
-    {
-        "country": "Cambodia",
-        "languages": [
+    ],
+    [
+        "country" => "Cambodia",
+        "languages" => [
             "Chinese",
             "Khmer",
             "T¬öam",
             "Vietnamese"
         ]
-    },
-    {
-        "country": "Kiribati",
-        "languages": [
+    ],
+    [
+        "country" => "Kiribati",
+        "languages" => [
             "Kiribati",
             "Tuvalu"
         ]
-    },
-    {
-        "country": "Saint Kitts and Nevis",
-        "languages": [
+    ],
+    [
+        "country" => "Saint Kitts and Nevis",
+        "languages" => [
             "Creole English",
             "English"
         ]
-    },
-    {
-        "country": "South Korea",
-        "languages": [
+    ],
+    [
+        "country" => "South Korea",
+        "languages" => [
             "Chinese",
             "Korean"
         ]
-    },
-    {
-        "country": "Kuwait",
-        "languages": [
+    ],
+    [
+        "country" => "Kuwait",
+        "languages" => [
             "Arabic",
             "English"
         ]
-    },
-    {
-        "country": "Laos",
-        "languages": [
+    ],
+    [
+        "country" => "Laos",
+        "languages" => [
             "Lao",
             "Lao-Soung",
             "Mon-khmer",
             "Thai"
         ]
-    },
-    {
-        "country": "Lebanon",
-        "languages": [
+    ],
+    [
+        "country" => "Lebanon",
+        "languages" => [
             "Arabic",
             "Armenian",
             "French"
         ]
-    },
-    {
-        "country": "Liberia",
-        "languages": [
+    ],
+    [
+        "country" => "Liberia",
+        "languages" => [
             "Bassa",
             "Gio",
             "Grebo",
@@ -1079,68 +1081,68 @@
             "Malinke",
             "Mano"
         ]
-    },
-    {
-        "country": "Libyan Arab Jamahiriya",
-        "languages": [
+    ],
+    [
+        "country" => "Libyan Arab Jamahiriya",
+        "languages" => [
             "Arabic",
             "Berberi"
         ]
-    },
-    {
-        "country": "Saint Lucia",
-        "languages": [
+    ],
+    [
+        "country" => "Saint Lucia",
+        "languages" => [
             "Creole French",
             "English"
         ]
-    },
-    {
-        "country": "Liechtenstein",
-        "languages": [
+    ],
+    [
+        "country" => "Liechtenstein",
+        "languages" => [
             "German",
             "Italian",
             "Turkish"
         ]
-    },
-    {
-        "country": "Sri Lanka",
-        "languages": [
+    ],
+    [
+        "country" => "Sri Lanka",
+        "languages" => [
             "Mixed Languages",
             "Singali",
             "Tamil"
         ]
-    },
-    {
-        "country": "Lesotho",
-        "languages": [
+    ],
+    [
+        "country" => "Lesotho",
+        "languages" => [
             "English",
             "Sotho",
             "Zulu"
         ]
-    },
-    {
-        "country": "Lithuania",
-        "languages": [
+    ],
+    [
+        "country" => "Lithuania",
+        "languages" => [
             "Belorussian",
             "Lithuanian",
             "Polish",
             "Russian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Luxembourg",
-        "languages": [
+    ],
+    [
+        "country" => "Luxembourg",
+        "languages" => [
             "French",
             "German",
             "Italian",
             "Luxembourgish",
             "Portuguese"
         ]
-    },
-    {
-        "country": "Latvia",
-        "languages": [
+    ],
+    [
+        "country" => "Latvia",
+        "languages" => [
             "Belorussian",
             "Latvian",
             "Lithuanian",
@@ -1148,59 +1150,59 @@
             "Russian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Macao",
-        "languages": [
+    ],
+    [
+        "country" => "Macao",
+        "languages" => [
             "Canton Chinese",
             "English",
             "Mandarin Chinese",
             "Portuguese"
         ]
-    },
-    {
-        "country": "Morocco",
-        "languages": [
+    ],
+    [
+        "country" => "Morocco",
+        "languages" => [
             "Arabic",
             "Berberi"
         ]
-    },
-    {
-        "country": "Monaco",
-        "languages": [
+    ],
+    [
+        "country" => "Monaco",
+        "languages" => [
             "English",
             "French",
             "Italian",
             "Monegasque"
         ]
-    },
-    {
-        "country": "Moldova",
-        "languages": [
+    ],
+    [
+        "country" => "Moldova",
+        "languages" => [
             "Bulgariana",
             "Gagauzi",
             "Romanian",
             "Russian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Madagascar",
-        "languages": [
+    ],
+    [
+        "country" => "Madagascar",
+        "languages" => [
             "French",
             "Malagasy"
         ]
-    },
-    {
-        "country": "Maldives",
-        "languages": [
+    ],
+    [
+        "country" => "Maldives",
+        "languages" => [
             "Dhivehi",
             "English"
         ]
-    },
-    {
-        "country": "Mexico",
-        "languages": [
+    ],
+    [
+        "country" => "Mexico",
+        "languages" => [
             "Mixtec",
             "N√°huatl",
             "Otom√≠",
@@ -1208,27 +1210,27 @@
             "Yucatec",
             "Zapotec"
         ]
-    },
-    {
-        "country": "Marshall Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Marshall Islands",
+        "languages" => [
             "English",
             "Marshallese"
         ]
-    },
-    {
-        "country": "Macedonia",
-        "languages": [
+    ],
+    [
+        "country" => "Macedonia",
+        "languages" => [
             "Albaniana",
             "Macedonian",
             "Romani",
             "Serbo-Croatian",
             "Turkish"
         ]
-    },
-    {
-        "country": "Mali",
-        "languages": [
+    ],
+    [
+        "country" => "Mali",
+        "languages" => [
             "Bambara",
             "Ful",
             "Senufo and Minianka",
@@ -1236,17 +1238,17 @@
             "Soninke",
             "Tamashek"
         ]
-    },
-    {
-        "country": "Malta",
-        "languages": [
+    ],
+    [
+        "country" => "Malta",
+        "languages" => [
             "English",
             "Maltese"
         ]
-    },
-    {
-        "country": "Myanmar",
-        "languages": [
+    ],
+    [
+        "country" => "Myanmar",
+        "languages" => [
             "Burmese",
             "Chin",
             "Kachin",
@@ -1256,10 +1258,10 @@
             "Rakhine",
             "Shan"
         ]
-    },
-    {
-        "country": "Mongolia",
-        "languages": [
+    ],
+    [
+        "country" => "Mongolia",
+        "languages" => [
             "Bajad",
             "Buryat",
             "Dariganga",
@@ -1267,10 +1269,10 @@
             "Kazakh",
             "Mongolian"
         ]
-    },
-    {
-        "country": "Northern Mariana Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Northern Mariana Islands",
+        "languages" => [
             "Carolinian",
             "Chamorro",
             "Chinese",
@@ -1278,10 +1280,10 @@
             "Korean",
             "Philippene Languages"
         ]
-    },
-    {
-        "country": "Mozambique",
-        "languages": [
+    ],
+    [
+        "country" => "Mozambique",
+        "languages" => [
             "Chuabo",
             "Lomwe",
             "Makua",
@@ -1293,10 +1295,10 @@
             "Tsonga",
             "Tswa"
         ]
-    },
-    {
-        "country": "Mauritania",
-        "languages": [
+    ],
+    [
+        "country" => "Mauritania",
+        "languages" => [
             "Ful",
             "Hassaniya",
             "Soninke",
@@ -1304,23 +1306,23 @@
             "Wolof",
             "Zenaga"
         ]
-    },
-    {
-        "country": "Montserrat",
-        "languages": [
+    ],
+    [
+        "country" => "Montserrat",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Martinique",
-        "languages": [
+    ],
+    [
+        "country" => "Martinique",
+        "languages" => [
             "Creole French",
             "French"
         ]
-    },
-    {
-        "country": "Mauritius",
-        "languages": [
+    ],
+    [
+        "country" => "Mauritius",
+        "languages" => [
             "Bhojpuri",
             "Creole French",
             "French",
@@ -1328,19 +1330,19 @@
             "Marathi",
             "Tamil"
         ]
-    },
-    {
-        "country": "Malawi",
-        "languages": [
+    ],
+    [
+        "country" => "Malawi",
+        "languages" => [
             "Chichewa",
             "Lomwe",
             "Ngoni",
             "Yao"
         ]
-    },
-    {
-        "country": "Malaysia",
-        "languages": [
+    ],
+    [
+        "country" => "Malaysia",
+        "languages" => [
             "Chinese",
             "Dusun",
             "English",
@@ -1348,18 +1350,18 @@
             "Malay",
             "Tamil"
         ]
-    },
-    {
-        "country": "Mayotte",
-        "languages": [
+    ],
+    [
+        "country" => "Mayotte",
+        "languages" => [
             "French",
             "Mahor√©",
             "Malagasy"
         ]
-    },
-    {
-        "country": "Namibia",
-        "languages": [
+    ],
+    [
+        "country" => "Namibia",
+        "languages" => [
             "Afrikaans",
             "Caprivi",
             "German",
@@ -1369,34 +1371,34 @@
             "Ovambo",
             "San"
         ]
-    },
-    {
-        "country": "New Caledonia",
-        "languages": [
+    ],
+    [
+        "country" => "New Caledonia",
+        "languages" => [
             "French",
             "Malenasian Languages",
             "Polynesian Languages"
         ]
-    },
-    {
-        "country": "Niger",
-        "languages": [
+    ],
+    [
+        "country" => "Niger",
+        "languages" => [
             "Ful",
             "Hausa",
             "Kanuri",
             "Songhai-zerma",
             "Tamashek"
         ]
-    },
-    {
-        "country": "Norfolk Island",
-        "languages": [
+    ],
+    [
+        "country" => "Norfolk Island",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Nigeria",
-        "languages": [
+    ],
+    [
+        "country" => "Nigeria",
+        "languages" => [
             "Bura",
             "Edo",
             "Ful",
@@ -1408,45 +1410,45 @@
             "Kanuri",
             "Tiv"
         ]
-    },
-    {
-        "country": "Nicaragua",
-        "languages": [
+    ],
+    [
+        "country" => "Nicaragua",
+        "languages" => [
             "Creole English",
             "Miskito",
             "Spanish",
             "Sumo"
         ]
-    },
-    {
-        "country": "Niue",
-        "languages": [
+    ],
+    [
+        "country" => "Niue",
+        "languages" => [
             "English",
             "Niue"
         ]
-    },
-    {
-        "country": "Netherlands",
-        "languages": [
+    ],
+    [
+        "country" => "Netherlands",
+        "languages" => [
             "Arabic",
             "Dutch",
             "Fries",
             "Turkish"
         ]
-    },
-    {
-        "country": "Norway",
-        "languages": [
+    ],
+    [
+        "country" => "Norway",
+        "languages" => [
             "Danish",
             "English",
             "Norwegian",
             "Saame",
             "Swedish"
         ]
-    },
-    {
-        "country": "Nepal",
-        "languages": [
+    ],
+    [
+        "country" => "Nepal",
+        "languages" => [
             "Bhojpuri",
             "Hindi",
             "Maithili",
@@ -1455,34 +1457,34 @@
             "Tamang",
             "Tharu"
         ]
-    },
-    {
-        "country": "Nauru",
-        "languages": [
+    ],
+    [
+        "country" => "Nauru",
+        "languages" => [
             "Chinese",
             "English",
             "Kiribati",
             "Nauru",
             "Tuvalu"
         ]
-    },
-    {
-        "country": "New Zealand",
-        "languages": [
+    ],
+    [
+        "country" => "New Zealand",
+        "languages" => [
             "English",
             "Maori"
         ]
-    },
-    {
-        "country": "Oman",
-        "languages": [
+    ],
+    [
+        "country" => "Oman",
+        "languages" => [
             "Arabic",
             "Balochi"
         ]
-    },
-    {
-        "country": "Pakistan",
-        "languages": [
+    ],
+    [
+        "country" => "Pakistan",
+        "languages" => [
             "Balochi",
             "Brahui",
             "Hindko",
@@ -1492,10 +1494,10 @@
             "Sindhi",
             "Urdu"
         ]
-    },
-    {
-        "country": "Panama",
-        "languages": [
+    ],
+    [
+        "country" => "Panama",
+        "languages" => [
             "Arabic",
             "Creole English",
             "Cuna",
@@ -1503,24 +1505,24 @@
             "Guaym√≠",
             "Spanish"
         ]
-    },
-    {
-        "country": "Pitcairn",
-        "languages": [
+    ],
+    [
+        "country" => "Pitcairn",
+        "languages" => [
             "Pitcairnese"
         ]
-    },
-    {
-        "country": "Peru",
-        "languages": [
+    ],
+    [
+        "country" => "Peru",
+        "languages" => [
             "Aimar√°",
             "Ket¬öua",
             "Spanish"
         ]
-    },
-    {
-        "country": "Philippines",
-        "languages": [
+    ],
+    [
+        "country" => "Philippines",
+        "languages" => [
             "Bicol",
             "Cebuano",
             "Hiligaynon",
@@ -1532,96 +1534,96 @@
             "Pilipino",
             "Waray-waray"
         ]
-    },
-    {
-        "country": "Palau",
-        "languages": [
+    ],
+    [
+        "country" => "Palau",
+        "languages" => [
             "Chinese",
             "English",
             "Palau",
             "Philippene Languages"
         ]
-    },
-    {
-        "country": "Papua New Guinea",
-        "languages": [
+    ],
+    [
+        "country" => "Papua New Guinea",
+        "languages" => [
             "Malenasian Languages",
             "Papuan Languages"
         ]
-    },
-    {
-        "country": "Poland",
-        "languages": [
+    ],
+    [
+        "country" => "Poland",
+        "languages" => [
             "Belorussian",
             "German",
             "Polish",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Puerto Rico",
-        "languages": [
+    ],
+    [
+        "country" => "Puerto Rico",
+        "languages" => [
             "English",
             "Spanish"
         ]
-    },
-    {
-        "country": "North Korea",
-        "languages": [
+    ],
+    [
+        "country" => "North Korea",
+        "languages" => [
             "Chinese",
             "Korean"
         ]
-    },
-    {
-        "country": "Portugal",
-        "languages": [
+    ],
+    [
+        "country" => "Portugal",
+        "languages" => [
             "Portuguese"
         ]
-    },
-    {
-        "country": "Paraguay",
-        "languages": [
+    ],
+    [
+        "country" => "Paraguay",
+        "languages" => [
             "German",
             "Guaran√≠",
             "Portuguese",
             "Spanish"
         ]
-    },
-    {
-        "country": "Palestine",
-        "languages": [
+    ],
+    [
+        "country" => "Palestine",
+        "languages" => [
             "Arabic",
             "Hebrew"
         ]
-    },
-    {
-        "country": "French Polynesia",
-        "languages": [
+    ],
+    [
+        "country" => "French Polynesia",
+        "languages" => [
             "Chinese",
             "French",
             "Tahitian"
         ]
-    },
-    {
-        "country": "Qatar",
-        "languages": [
+    ],
+    [
+        "country" => "Qatar",
+        "languages" => [
             "Arabic",
             "Urdu"
         ]
-    },
-    {
-        "country": "Reunion",
-        "languages": [
+    ],
+    [
+        "country" => "Reunion",
+        "languages" => [
             "Chinese",
             "Comorian",
             "Creole French",
             "Malagasy",
             "Tamil"
         ]
-    },
-    {
-        "country": "Romania",
-        "languages": [
+    ],
+    [
+        "country" => "Romania",
+        "languages" => [
             "German",
             "Hungarian",
             "Romani",
@@ -1629,10 +1631,10 @@
             "Serbo-Croatian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Russian Federation",
-        "languages": [
+    ],
+    [
+        "country" => "Russian Federation",
+        "languages" => [
             "Avarian",
             "Bashkir",
             "Belorussian",
@@ -1646,23 +1648,23 @@
             "Udmur",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "Rwanda",
-        "languages": [
+    ],
+    [
+        "country" => "Rwanda",
+        "languages" => [
             "French",
             "Rwanda"
         ]
-    },
-    {
-        "country": "Saudi Arabia",
-        "languages": [
+    ],
+    [
+        "country" => "Saudi Arabia",
+        "languages" => [
             "Arabic"
         ]
-    },
-    {
-        "country": "Sudan",
-        "languages": [
+    ],
+    [
+        "country" => "Sudan",
+        "languages" => [
             "Arabic",
             "Bari",
             "Beja",
@@ -1674,10 +1676,10 @@
             "Nuer",
             "Zande"
         ]
-    },
-    {
-        "country": "Senegal",
-        "languages": [
+    ],
+    [
+        "country" => "Senegal",
+        "languages" => [
             "Diola",
             "Ful",
             "Malinke",
@@ -1685,10 +1687,10 @@
             "Soninke",
             "Wolof"
         ]
-    },
-    {
-        "country": "Serbia",
-        "languages": [
+    ],
+    [
+        "country" => "Serbia",
+        "languages" => [
             "Serbian",
             "Hungarian",
             "Slovak",
@@ -1699,39 +1701,39 @@
             "Bulgarian",
             "English"
         ]
-    },
-    {
-        "country": "Singapore",
-        "languages": [
+    ],
+    [
+        "country" => "Singapore",
+        "languages" => [
             "Chinese",
             "Malay",
             "Tamil"
         ]
-    },
-    {
-        "country": "Saint Helena",
-        "languages": [
+    ],
+    [
+        "country" => "Saint Helena",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Svalbard and Jan Mayen",
-        "languages": [
+    ],
+    [
+        "country" => "Svalbard and Jan Mayen",
+        "languages" => [
             "Norwegian",
             "Russian"
         ]
-    },
-    {
-        "country": "Solomon Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Solomon Islands",
+        "languages" => [
             "Malenasian Languages",
             "Papuan Languages",
             "Polynesian Languages"
         ]
-    },
-    {
-        "country": "Sierra Leone",
-        "languages": [
+    ],
+    [
+        "country" => "Sierra Leone",
+        "languages" => [
             "Bullom-sherbro",
             "Ful",
             "Kono-vai",
@@ -1741,68 +1743,68 @@
             "Temne",
             "Yalunka"
         ]
-    },
-    {
-        "country": "El Salvador",
-        "languages": [
+    ],
+    [
+        "country" => "El Salvador",
+        "languages" => [
             "Nahua",
             "Spanish"
         ]
-    },
-    {
-        "country": "San Marino",
-        "languages": [
+    ],
+    [
+        "country" => "San Marino",
+        "languages" => [
             "Italian"
         ]
-    },
-    {
-        "country": "Somalia",
-        "languages": [
+    ],
+    [
+        "country" => "Somalia",
+        "languages" => [
             "Arabic",
             "Somali"
         ]
-    },
-    {
-        "country": "Saint Pierre and Miquelon",
-        "languages": [
+    ],
+    [
+        "country" => "Saint Pierre and Miquelon",
+        "languages" => [
             "French"
         ]
-    },
-    {
-        "country": "Sao Tome and Principe",
-        "languages": [
+    ],
+    [
+        "country" => "Sao Tome and Principe",
+        "languages" => [
             "Crioulo",
             "French"
         ]
-    },
-    {
-        "country": "Suriname",
-        "languages": [
+    ],
+    [
+        "country" => "Suriname",
+        "languages" => [
             "Hindi",
             "Sranantonga"
         ]
-    },
-    {
-        "country": "Slovakia",
-        "languages": [
+    ],
+    [
+        "country" => "Slovakia",
+        "languages" => [
             "Czech and Moravian",
             "Hungarian",
             "Romani",
             "Slovak",
             "Ukrainian and Russian"
         ]
-    },
-    {
-        "country": "Slovenia",
-        "languages": [
+    ],
+    [
+        "country" => "Slovenia",
+        "languages" => [
             "Hungarian",
             "Serbo-Croatian",
             "Slovene"
         ]
-    },
-    {
-        "country": "Sweden",
-        "languages": [
+    ],
+    [
+        "country" => "Sweden",
+        "languages" => [
             "Arabic",
             "Finnish",
             "Norwegian",
@@ -1810,38 +1812,38 @@
             "Spanish",
             "Swedish"
         ]
-    },
-    {
-        "country": "Swaziland",
-        "languages": [
+    ],
+    [
+        "country" => "Swaziland",
+        "languages" => [
             "Swazi",
             "Zulu"
         ]
-    },
-    {
-        "country": "Seychelles",
-        "languages": [
+    ],
+    [
+        "country" => "Seychelles",
+        "languages" => [
             "English",
             "French",
             "Seselwa"
         ]
-    },
-    {
-        "country": "Syria",
-        "languages": [
+    ],
+    [
+        "country" => "Syria",
+        "languages" => [
             "Arabic",
             "Kurdish"
         ]
-    },
-    {
-        "country": "Turks and Caicos Islands",
-        "languages": [
+    ],
+    [
+        "country" => "Turks and Caicos Islands",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Chad",
-        "languages": [
+    ],
+    [
+        "country" => "Chad",
+        "languages" => [
             "Arabic",
             "Gorane",
             "Hadjarai",
@@ -1851,10 +1853,10 @@
             "Sara",
             "Tandjile"
         ]
-    },
-    {
-        "country": "Togo",
-        "languages": [
+    ],
+    [
+        "country" => "Togo",
+        "languages" => [
             "Ane",
             "Ewe",
             "Gurma",
@@ -1864,10 +1866,10 @@
             "Naudemba",
             "Watyi"
         ]
-    },
-    {
-        "country": "Thailand",
-        "languages": [
+    ],
+    [
+        "country" => "Thailand",
+        "languages" => [
             "Chinese",
             "Khmer",
             "Kuy",
@@ -1875,80 +1877,80 @@
             "Malay",
             "Thai"
         ]
-    },
-    {
-        "country": "Tajikistan",
-        "languages": [
+    ],
+    [
+        "country" => "Tajikistan",
+        "languages" => [
             "Russian",
             "Tadzhik",
             "Uzbek"
         ]
-    },
-    {
-        "country": "Tokelau",
-        "languages": [
+    ],
+    [
+        "country" => "Tokelau",
+        "languages" => [
             "English",
             "Tokelau"
         ]
-    },
-    {
-        "country": "Turkmenistan",
-        "languages": [
+    ],
+    [
+        "country" => "Turkmenistan",
+        "languages" => [
             "Kazakh",
             "Russian",
             "Turkmenian",
             "Uzbek"
         ]
-    },
-    {
-        "country": "East Timor",
-        "languages": [
+    ],
+    [
+        "country" => "East Timor",
+        "languages" => [
             "Portuguese",
             "Sunda"
         ]
-    },
-    {
-        "country": "Tonga",
-        "languages": [
+    ],
+    [
+        "country" => "Tonga",
+        "languages" => [
             "English",
             "Tongan"
         ]
-    },
-    {
-        "country": "Trinidad and Tobago",
-        "languages": [
+    ],
+    [
+        "country" => "Trinidad and Tobago",
+        "languages" => [
             "Creole English",
             "English",
             "Hindi"
         ]
-    },
-    {
-        "country": "Tunisia",
-        "languages": [
+    ],
+    [
+        "country" => "Tunisia",
+        "languages" => [
             "Arabic",
             "Arabic-French",
             "Arabic-French-English"
         ]
-    },
-    {
-        "country": "Turkey",
-        "languages": [
+    ],
+    [
+        "country" => "Turkey",
+        "languages" => [
             "Arabic",
             "Kurdish",
             "Turkish"
         ]
-    },
-    {
-        "country": "Tuvalu",
-        "languages": [
+    ],
+    [
+        "country" => "Tuvalu",
+        "languages" => [
             "English",
             "Kiribati",
             "Tuvalu"
         ]
-    },
-    {
-        "country": "Taiwan",
-        "languages": [
+    ],
+    [
+        "country" => "Taiwan",
+        "languages" => [
             "Ami",
             "Atayal",
             "Hakka",
@@ -1956,10 +1958,10 @@
             "Min",
             "Paiwan"
         ]
-    },
-    {
-        "country": "Tanzania",
-        "languages": [
+    ],
+    [
+        "country" => "Tanzania",
+        "languages" => [
             "Chaga and Pare",
             "Gogo",
             "Ha",
@@ -1972,10 +1974,10 @@
             "Shambala",
             "Swahili"
         ]
-    },
-    {
-        "country": "Uganda",
-        "languages": [
+    ],
+    [
+        "country" => "Uganda",
+        "languages" => [
             "Acholi",
             "Ganda",
             "Gisu",
@@ -1987,10 +1989,10 @@
             "Soga",
             "Teso"
         ]
-    },
-    {
-        "country": "Ukraine",
-        "languages": [
+    ],
+    [
+        "country" => "Ukraine",
+        "languages" => [
             "Belorussian",
             "Bulgariana",
             "Hungarian",
@@ -1999,22 +2001,22 @@
             "Russian",
             "Ukrainian"
         ]
-    },
-    {
-        "country": "United States Minor Outlying Islands",
-        "languages": [
+    ],
+    [
+        "country" => "United States Minor Outlying Islands",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Uruguay",
-        "languages": [
+    ],
+    [
+        "country" => "Uruguay",
+        "languages" => [
             "Spanish"
         ]
-    },
-    {
-        "country": "United States",
-        "languages": [
+    ],
+    [
+        "country" => "United States",
+        "languages" => [
             "Chinese",
             "English",
             "French",
@@ -2028,10 +2030,10 @@
             "Tagalog",
             "Vietnamese"
         ]
-    },
-    {
-        "country": "Uzbekistan",
-        "languages": [
+    ],
+    [
+        "country" => "Uzbekistan",
+        "languages" => [
             "Karakalpak",
             "Kazakh",
             "Russian",
@@ -2039,45 +2041,45 @@
             "Tatar",
             "Uzbek"
         ]
-    },
-    {
-        "country": "Holy See (Vatican City State)",
-        "languages": [
+    ],
+    [
+        "country" => "Holy See (Vatican City State)",
+        "languages" => [
             "Italian"
         ]
-    },
-    {
-        "country": "Saint Vincent and the Grenadines",
-        "languages": [
+    ],
+    [
+        "country" => "Saint Vincent and the Grenadines",
+        "languages" => [
             "Creole English",
             "English"
         ]
-    },
-    {
-        "country": "Venezuela",
-        "languages": [
+    ],
+    [
+        "country" => "Venezuela",
+        "languages" => [
             "Goajiro",
             "Spanish",
             "Warrau"
         ]
-    },
-    {
-        "country": "Virgin Islands, British",
-        "languages": [
+    ],
+    [
+        "country" => "Virgin Islands, British",
+        "languages" => [
             "English"
         ]
-    },
-    {
-        "country": "Virgin Islands, U.S.",
-        "languages": [
+    ],
+    [
+        "country" => "Virgin Islands, U.S.",
+        "languages" => [
             "English",
             "French",
             "Spanish"
         ]
-    },
-    {
-        "country": "Vietnam",
-        "languages": [
+    ],
+    [
+        "country" => "Vietnam",
+        "languages" => [
             "Chinese",
             "Khmer",
             "Man",
@@ -2088,40 +2090,40 @@
             "Tho",
             "Vietnamese"
         ]
-    },
-    {
-        "country": "Vanuatu",
-        "languages": [
+    ],
+    [
+        "country" => "Vanuatu",
+        "languages" => [
             "Bislama",
             "English",
             "French"
         ]
-    },
-    {
-        "country": "Wallis and Futuna",
-        "languages": [
+    ],
+    [
+        "country" => "Wallis and Futuna",
+        "languages" => [
             "Futuna",
             "Wallis"
         ]
-    },
-    {
-        "country": "Samoa",
-        "languages": [
+    ],
+    [
+        "country" => "Samoa",
+        "languages" => [
             "English",
             "Samoan",
             "Samoan-English"
         ]
-    },
-    {
-        "country": "Yemen",
-        "languages": [
+    ],
+    [
+        "country" => "Yemen",
+        "languages" => [
             "Arabic",
             "Soqutri"
         ]
-    },
-    {
-        "country": "South Africa",
-        "languages": [
+    ],
+    [
+        "country" => "South Africa",
+        "languages" => [
             "Afrikaans",
             "English",
             "Ndebele",
@@ -2134,10 +2136,10 @@
             "Xhosa",
             "Zulu"
         ]
-    },
-    {
-        "country": "Zambia",
-        "languages": [
+    ],
+    [
+        "country" => "Zambia",
+        "languages" => [
             "Bemba",
             "Chewa",
             "Lozi",
@@ -2145,14 +2147,15 @@
             "Nyanja",
             "Tongan"
         ]
-    },
-    {
-        "country": "Zimbabwe",
-        "languages": [
+    ],
+    [
+        "country" => "Zimbabwe",
+        "languages" => [
             "English",
             "Ndebele",
             "Nyanja",
             "Shona"
         ]
-    }
-]
+    ]
+];
+

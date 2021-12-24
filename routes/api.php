@@ -42,6 +42,10 @@ Route::resource('/permissions', 'App\Http\Controllers\PermissionController')
     ->middleware(['jwt.verify', 'role:root'])
     ->only(['index', 'show']);
 
+Route::resource('/languages', 'App\Http\Controllers\LanguageController')
+    ->middleware(['jwt.verify', 'role:root|admin'])
+    ->only(['index']);
+
 Route::group([
     'middleware' => ['api', 'jwt.verify', 'role:root'],
     'prefix' => 'roles',
@@ -93,6 +97,28 @@ Route::group([
     $router->put('/{gender}', 'App\Http\Controllers\GenderController@update');
     $router->delete('/{gender}', 'App\Http\Controllers\GenderController@destroy')
         ->middleware(['permission:Delete gender']);
+});
+
+Route::group([
+    'middleware' => ['api', 'jwt.verify'],
+    'prefix' => 'libraries',
+], function ($router) {
+    $router->resource('/', 'App\Http\Controllers\LibraryController')
+        ->only(['index', 'store', 'update']);
+    $router->put('/{library}', 'App\Http\Controllers\LibraryController@update');
+    $router->delete('/{library}', 'App\Http\Controllers\LibraryController@destroy')
+        ->middleware(['permission:Delete library']);
+});
+
+Route::group([
+    'middleware' => ['api', 'jwt.verify'],
+    'prefix' => 'borrow-book',
+], function ($router) {
+    $router->resource('/', 'App\Http\Controllers\BorrowedBookController')
+        ->only(['index', 'store', 'update']);
+    $router->put('/{borrowedBook}', 'App\Http\Controllers\BorrowedBookController@update');
+    $router->delete('/{borrowedBook}', 'App\Http\Controllers\BorrowedBookController@destroy')
+        ->middleware(['permission:Delete borrowed book']);
 });
 
 Route::resource('/users', 'App\Http\Controllers\UserController')

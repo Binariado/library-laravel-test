@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use App\helper\RequestFailedMessage;
 use Illuminate\Foundation\Http\FormRequest;
 use JWTAuth;
+use Symfony\Component\HttpFoundation\Response;
 
 class StoreGenderRequest extends FormRequest
 {
@@ -22,6 +23,22 @@ class StoreGenderRequest extends FormRequest
         }
 
         return $user->can('Create gender');
+    }
+
+    /**
+     * Handle a failed authorization attempt.
+     *
+     * @return void
+     *
+     * @throws abort
+     */
+    protected function failedAuthorization()
+    {
+        abort(
+            response()->json(['message' => 'Unauthorized.'],
+                Response::HTTP_FORBIDDEN
+            )
+        );
     }
 
     /**

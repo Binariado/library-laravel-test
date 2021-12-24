@@ -19,9 +19,9 @@ class CreateLanguagesTable extends Migration
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();
             $table->string('name');
-            $table->string('name_native');
-            $table->string('code1');
-            $table->string('code2');
+            $table->string('name_native')->nullable();
+            $table->string('code1')->nullable();
+            $table->string('code2')->nullable();
             $table->timestamps();
         });
     }

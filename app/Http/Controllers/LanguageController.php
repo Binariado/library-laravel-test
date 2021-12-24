@@ -2,19 +2,45 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Country;
 use App\Models\Gender;
+use App\Models\Language;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Symfony\Component\HttpFoundation\Response;
 
 class LanguageController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function index()
+    public function index(Request $request): JsonResponse
     {
-        //
+        $search = $request->collect()->get('search');
+
+        if ($search) {
+            $paginate = Language::query()
+                ->where(
+                    'name',
+                    'like', "$search"
+                )
+                ->orderBy('id')->paginate(30);
+        } else {
+            $paginate = Language::query()
+                ->orderBy('id')->paginate(30);
+        }
+
+        return response()->json([
+            'message' => 'Language list',
+            'data' =>  $paginate,
+
+        ], Response::HTTP_OK);
     }
 
     /**
