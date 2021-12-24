@@ -5,9 +5,8 @@ namespace App\Http\Requests;
 use App\helper\RequestFailedMessage;
 use Illuminate\Foundation\Http\FormRequest;
 use JWTAuth;
-use Symfony\Component\HttpFoundation\Response;
 
-class StoreAuthorRequest extends FormRequest
+class UpdateEditorRequest extends FormRequest
 {
     use RequestFailedMessage;
 
@@ -19,26 +18,10 @@ class StoreAuthorRequest extends FormRequest
     public function authorize(): bool
     {
         if (!$user = JWTAuth::parseToken()->authenticate()) {
-           return false;
+            return false;
         }
 
-        return $user->can('Create author');
-    }
-
-    /**
-     * Handle a failed authorization attempt.
-     *
-     * @return void
-     *
-     * @throws abort
-     */
-    protected function failedAuthorization()
-    {
-        abort(
-            response()->json(['message' => 'Unauthorized.'],
-                Response::HTTP_FORBIDDEN
-            )
-        );
+        return $user->can('Update editor');
     }
 
     /**
@@ -49,8 +32,7 @@ class StoreAuthorRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:authors|string|max:255'
+            'name' => 'required|unique:editors|string|max:255'
         ];
     }
-
 }

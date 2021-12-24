@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreAssignRoleRequest;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use Symfony\Component\HttpFoundation\Response;
 
-class UserController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +19,8 @@ class UserController extends Controller
     public function index(): JsonResponse
     {
         return response()->json(array(
-            'message' => 'List users',
-            'data' => User::all()
+            'message' => 'List roles',
+            'data' => Role::all()
         ), Response::HTTP_OK);
     }
 
@@ -47,11 +49,14 @@ class UserController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function show($id)
+    public function show(int $id): JsonResponse
     {
-        //
+        return response()->json(array(
+            'message' => 'Show role',
+            'data' => Role::findById($id)
+        ), Response::HTTP_OK);
     }
 
     /**
@@ -86,5 +91,24 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * @param StoreAssignRoleRequest $request
+     * @return JsonResponse
+     */
+    public function assign(StoreAssignRoleRequest $request): JsonResponse
+    {
+        $role = Role::findById($request->get('role_id'));
+        $user = User::query()
+            ->where('id', $request->get('user_id'))
+            ->first();
+
+        $user->assignRole($role);
+
+        return response()->json(array(
+            'message' => "Successful assignment of {$role->name} roles",
+            'data' => $user
+        ));
     }
 }

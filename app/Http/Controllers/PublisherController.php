@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreAuthorRequest;
-use App\Http\Requests\UpdateAuthorRequest;
-use App\Models\Author;
+use App\Http\Requests\StorePublisherRequest;
+use App\Http\Requests\UpdatePublisherRequest;
+use App\Models\Publisher;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
-class AuthorController extends Controller
+
+class PublisherController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,10 +18,10 @@ class AuthorController extends Controller
      */
     public function index(): JsonResponse
     {
-        return response()->json([
-            "message" => "list authors",
-            "data" => Author::all()
-        ], Response::HTTP_OK);
+        return response()->json(array(
+            'message' => 'List publisher',
+            'data' => Publisher::all(),
+        ), Response::HTTP_OK);
     }
 
     /**
@@ -30,37 +31,36 @@ class AuthorController extends Controller
      */
     public function create(): JsonResponse
     {
-        //
+
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  StoreAuthorRequest  $request
+     * @param StorePublisherRequest $request
      * @return JsonResponse
      */
-    public function store(StoreAuthorRequest $request): JsonResponse
+    public function store(StorePublisherRequest $request): JsonResponse
     {
-
-        $author = new Author([
+        $publisher = new Publisher([
             "name" => $request->get('name')
         ]);
 
-        $author->save();
+        $publisher->save();
 
         return response()->json([
-            "message" => "author created",
-            "data" => $author
+            "message" => "publisher created",
+            "data" => $publisher
         ], Response::HTTP_CREATED);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  Author  $author
+     * @param  Publisher  $publisher
      * @return JsonResponse
      */
-    public function show(Author $author): JsonResponse
+    public function show(Publisher $publisher): JsonResponse
     {
         //
     }
@@ -68,10 +68,10 @@ class AuthorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  Author  $author
+     * @param  Publisher  $publisher
      * @return JsonResponse
      */
-    public function edit(Author $author): JsonResponse
+    public function edit(Publisher $publisher): JsonResponse
     {
         //
     }
@@ -79,37 +79,37 @@ class AuthorController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  UpdateAuthorRequest  $request
-     * @param  Author  $author
+     * @param  UpdatePublisherRequest  $request
+     * @param  Publisher  $publisher
      * @return JsonResponse
      */
-    public function update(UpdateAuthorRequest $request, Author $author): JsonResponse
+    public function update(UpdatePublisherRequest $request, Publisher $publisher): JsonResponse
     {
-        $author->update([
+        $publisher->update([
             'name' => $request->get('name')
         ]);
 
-        $author->save();
+        $publisher->save();
 
         return response()->json([
-            "message" => "author updated",
-            "data" => $author
+            "message" => "publisher updated",
+            "data" => $publisher
         ], Response::HTTP_OK);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  Author  $author
+     * @param  Publisher  $publisher
      * @return JsonResponse
      */
-    public function destroy(Author $author): JsonResponse
+    public function destroy(Publisher $publisher): JsonResponse
     {
-        $author->delete();
+        $publisher->delete();
 
         return response()->json([
-            "message" => "author updated",
-            "data" => $author
+            "message" => "publisher deleted",
+            "data" => $publisher
         ], Response::HTTP_OK);
     }
 }

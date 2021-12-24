@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use JWTAuth;
+use Spatie\Permission\Models\Role;
 use Symfony\Component\HttpFoundation\Response;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
@@ -24,6 +25,10 @@ class AuthController extends Controller
         );
     }*/
 
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     */
     public function register(Request $request): JsonResponse
     {
         $validator = Validator::make($request->all(), [
@@ -58,6 +63,9 @@ class AuthController extends Controller
         ]);
 
         $access_token = JWTAuth::fromUser($user);
+
+        $role = Role::findByName('reader');
+        $user->assignRole($role);
 
         return response()->json(compact('user','access_token'),201);
     }
@@ -99,6 +107,9 @@ class AuthController extends Controller
 
     }
 
+    /**
+     * @return JsonResponse
+     */
     public function getAuthenticatedUser(): JsonResponse
     {
         try {

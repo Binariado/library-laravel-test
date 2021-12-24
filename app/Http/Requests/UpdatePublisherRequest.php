@@ -7,7 +7,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use JWTAuth;
 use Symfony\Component\HttpFoundation\Response;
 
-class StoreAuthorRequest extends FormRequest
+class UpdatePublisherRequest extends FormRequest
 {
     use RequestFailedMessage;
 
@@ -19,10 +19,10 @@ class StoreAuthorRequest extends FormRequest
     public function authorize(): bool
     {
         if (!$user = JWTAuth::parseToken()->authenticate()) {
-           return false;
+            return false;
         }
 
-        return $user->can('Create author');
+        return $user->can('Update publisher');
     }
 
     /**
@@ -49,8 +49,7 @@ class StoreAuthorRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:authors|string|max:255'
+            'name' => 'required|unique:publishers|string|max:255'
         ];
     }
-
 }

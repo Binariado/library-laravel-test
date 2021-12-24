@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use JWTAuth;
+use Symfony\Component\HttpFoundation\Response;
 
 class UpdateAuthorRequest extends FormRequest
 {
@@ -11,9 +13,29 @@ class UpdateAuthorRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
-        return false;
+        if (!$user = JWTAuth::parseToken()->authenticate()) {
+            return false;
+        }
+
+        return $user->can('Update author');
+    }
+
+    /**
+     * Handle a failed authorization attempt.
+     *
+     * @return void
+     *
+     * @throws abort
+     */
+    protected function failedAuthorization()
+    {
+        abort(
+            response()->json(['message' => 'Unauthorized.'],
+                Response::HTTP_FORBIDDEN
+            )
+        );
     }
 
     /**
@@ -24,7 +46,7 @@ class UpdateAuthorRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|unique:authors|string|max:255'
         ];
     }
 }

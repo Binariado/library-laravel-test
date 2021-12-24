@@ -2,18 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Permission;
+use Symfony\Component\HttpFoundation\Response;
 
 class PermissionController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function index()
+    public function index(): JsonResponse
     {
-        //
+        return response()->json(array(
+            'message' => 'List permissions',
+            'data' => Permission::all()
+        ), Response::HTTP_OK);
     }
 
     /**
@@ -40,12 +46,15 @@ class PermissionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param int $id
+     * @return JsonResponse
      */
-    public function show($id)
+    public function show(int $id): JsonResponse
     {
-        //
+        return response()->json(array(
+            'message' => 'Show permission',
+            'data' => Permission::findById($id)
+        ), Response::HTTP_OK);
     }
 
     /**

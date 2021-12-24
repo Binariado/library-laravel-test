@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreAuthorRequest;
-use App\Http\Requests\UpdateAuthorRequest;
-use App\Models\Author;
+use App\Http\Requests\StoreEditorRequest;
+use App\Http\Requests\UpdateEditorRequest;
+use App\Models\Editor;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
-class AuthorController extends Controller
+class EditorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +18,9 @@ class AuthorController extends Controller
     public function index(): JsonResponse
     {
         return response()->json([
-            "message" => "list authors",
-            "data" => Author::all()
-        ], Response::HTTP_OK);
+            "message" => "List editors",
+            "data" => Editor::all()
+        ], Response::HTTP_CREATED);
     }
 
     /**
@@ -36,31 +36,30 @@ class AuthorController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  StoreAuthorRequest  $request
+     * @param  StoreEditorRequest  $request
      * @return JsonResponse
      */
-    public function store(StoreAuthorRequest $request): JsonResponse
+    public function store(StoreEditorRequest $request): JsonResponse
     {
-
-        $author = new Author([
+        $editor = new Editor([
             "name" => $request->get('name')
         ]);
 
-        $author->save();
+        $editor->save();
 
         return response()->json([
-            "message" => "author created",
-            "data" => $author
+            "message" => "editor created",
+            "data" => $editor
         ], Response::HTTP_CREATED);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  Author  $author
+     * @param  Editor  $editor
      * @return JsonResponse
      */
-    public function show(Author $author): JsonResponse
+    public function show(Editor $editor): JsonResponse
     {
         //
     }
@@ -68,10 +67,10 @@ class AuthorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  Author  $author
+     * @param  Editor  $editor
      * @return JsonResponse
      */
-    public function edit(Author $author): JsonResponse
+    public function edit(Editor $editor): JsonResponse
     {
         //
     }
@@ -79,37 +78,37 @@ class AuthorController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  UpdateAuthorRequest  $request
-     * @param  Author  $author
+     * @param  UpdateEditorRequest  $request
+     * @param  Editor  $editor
      * @return JsonResponse
      */
-    public function update(UpdateAuthorRequest $request, Author $author): JsonResponse
+    public function update(UpdateEditorRequest $request, Editor $editor): JsonResponse
     {
-        $author->update([
+        $editor->update([
             'name' => $request->get('name')
         ]);
 
-        $author->save();
+        $editor->save();
 
         return response()->json([
-            "message" => "author updated",
-            "data" => $author
+            "message" => "editor updated",
+            "data" => $editor
         ], Response::HTTP_OK);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  Author  $author
+     * @param  Editor  $editor
      * @return JsonResponse
      */
-    public function destroy(Author $author): JsonResponse
+    public function destroy(Editor $editor): JsonResponse
     {
-        $author->delete();
+        $editor->delete();
 
         return response()->json([
-            "message" => "author updated",
-            "data" => $author
+            "message" => "editor deleted",
+            "data" => $editor
         ], Response::HTTP_OK);
     }
 }
