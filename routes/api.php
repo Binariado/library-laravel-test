@@ -84,6 +84,17 @@ Route::group([
         ->middleware(['permission:Delete publisher']);
 });
 
+Route::group([
+    'middleware' => ['api', 'jwt.verify'],
+    'prefix' => 'genders',
+], function ($router) {
+    $router->resource('/', 'App\Http\Controllers\GenderController')
+        ->only(['index', 'store', 'update']);
+    $router->put('/{gender}', 'App\Http\Controllers\GenderController@update');
+    $router->delete('/{gender}', 'App\Http\Controllers\GenderController@destroy')
+        ->middleware(['permission:Delete gender']);
+});
+
 Route::resource('/users', 'App\Http\Controllers\UserController')
     ->middleware(['api', 'jwt.verify', 'role:admin|root'])
     ->only(['index', 'show']);
