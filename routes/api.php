@@ -37,3 +37,7 @@ Route::group([
     $router->post('login', 'App\Http\Controllers\AuthController@login');
     $router->post('register', 'App\Http\Controllers\AuthController@register');
 });
+
+
+Route::resource('/authors', 'App\Http\Controllers\AuthorController')
+    ->middleware(['jwt.verify']);

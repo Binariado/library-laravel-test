@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->enum('document_type', ['RC', 'CI', 'TI', 'CC', 'DNI', 'CE', 'TP']);
             $table->string('address');
             $table->string('phone');
-            $table->text('image');
+            $table->text('image')->nullable();
             $table->integer('document_number');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

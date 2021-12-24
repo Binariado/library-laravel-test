@@ -57,9 +57,9 @@ class AuthController extends Controller
             'image' => '/dsd',
         ]);
 
-        $token = JWTAuth::fromUser($user);
+        $access_token = JWTAuth::fromUser($user);
 
-        return response()->json(compact('user','token'),201);
+        return response()->json(compact('user','access_token'),201);
     }
 
     /**
