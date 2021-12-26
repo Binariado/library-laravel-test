@@ -127,12 +127,10 @@ class UserController extends Controller
 
     public function banUser(Request $request, User $user): JsonResponse{
 
-        if ($request->get('banned')) {
-            $user->update([
-                'banned' => $request->get('banned')
-            ]);
-            $user->save();
-        }
+        $user->update([
+            'banned' => $request->get('banned')
+        ]);
+        $user->save();
 
         return response()->json(array(
             'message' => 'banned user',

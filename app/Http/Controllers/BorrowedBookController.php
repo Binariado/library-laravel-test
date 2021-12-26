@@ -51,7 +51,7 @@ class BorrowedBookController extends Controller
     {
         $user = User::query()->find($request->get('user_id'));
 
-        if ($user) {
+        if ($user->banned) {
             return response()->json([
                 "message" => "User banned",
                 "data" => $user
